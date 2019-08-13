@@ -7,9 +7,13 @@ Online homepage of the McGill Integrative Bioscience Society
 
 ## How to use
 
-### Editors
+### Development Requirements
 
-- Install Jekyll (as described [here](https://jekyllrb.com/docs/installation/))
+- [Ruby](https://www.ruby-lang.org/en/documentation/installation/)
+- [Jekyll](https://jekyllrb.com/docs/installation/)
+
+### Installation
+
 - Open your cmd/terminal and navigate to the directory folder (with the `cd <YourPath/>` command)
 - Install Gems and needed files with `gem install bundler jekyll` and `bundle install`
 
