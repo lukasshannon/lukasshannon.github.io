@@ -5,12 +5,12 @@ Online homepage of the McGill Integrative Bioscience Society
 - A simple website built for MIBS from McGill University
 - Built with Jekyll. Forked from 'so-simple-theme'.
 
-## How to use
-
-### Development Requirements
+## Development Requirements
 
 - [Ruby](https://www.ruby-lang.org/en/documentation/installation/)
 - [Jekyll](https://jekyllrb.com/docs/installation/)
+
+## How to use
 
 ### Installation
 
