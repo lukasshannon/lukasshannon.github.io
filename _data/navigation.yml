@@ -1,0 +1,16 @@
+# Sample site navigation bar links
+
+- title: Home
+  url: /
+- title: Programs
+  url: /programs/
+- title: Faculty
+  url: /faculty/advisors/
+- title: Council
+  url: /council/
+- title: Events
+  url: /events/
+- title: Alumni
+  url: /alumni/
+- title: Contact
+  url: /contact/

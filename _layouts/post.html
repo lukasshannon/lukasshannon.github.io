@@ -1,0 +1,34 @@
+---
+layout: default
+---
+
+<main id="main" class="main-content" aria-label="Content">
+  <article class="h-entry">
+    {% include page-image.html %}
+    <div class="page-wrapper">
+      <header class="page-header">
+        {% assign title = page.title | markdownify | strip_html %}
+        <h1 id="page-title" class="page-title p-name">{{ page.title }}</h1>
+      </header>
+
+      <div class="page-sidebar">
+        {% include page-author.html %}
+        {% include page-categories.html %}
+      </div>
+
+      <h1 class="page-categories">{{page.header_title}}</h1>
+
+      <div class="page-content">
+        <div class="e-content">
+            {{ content }}
+        </div>
+
+        {% if page.share %}
+          {% include social-share.html %}
+        {% endif %}
+
+        {% include page-pagination.html %}
+      </div>
+    </div>
+  </article>
+</main>

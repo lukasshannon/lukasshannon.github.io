@@ -1,0 +1,49 @@
+.dropdown-menu.show {
+    background-color: black !important;
+    z-index: 999999 !important;
+}
+.page-header {
+    position: absolute;
+    z-index: -1;
+    left: 1em;
+    top: 10em;
+    background-color: black;
+    margin: 0.25em;
+    h1.page-title {
+        color: white;
+        font-size: 62px;
+        line-height: 1.5;
+        font-style: normal;
+        font-weight: 700;
+        margin: 0;
+        padding: 0 .5em;
+    }
+}
+
+.site-nav {
+    display: flex;
+    justify-content: center;
+    padding-right: 3vh;
+    ul {
+        border-radius: 0 !important;
+        padding: 0;
+    }
+    li {
+        font-size: 1em !important;
+        a:hover {
+            border-color: transparent;
+        }
+    }
+}
+.masthead {
+    position: absolute;
+    margin-bottom: 0;
+    left: 1em;
+    .wrap {
+        img {
+            width: auto;
+            height: 125px;
+            border-radius: 0 !important;
+        }
+    }
+}

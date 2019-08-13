@@ -1,0 +1,86 @@
+var store = [{
+        "title": "Janedoe",
+        "excerpt":"Jane has worked with the Faculty for about 10 years. ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/advisors/janeDoe.html"
+      },{
+        "title": "Johndoe",
+        "excerpt":"Jane has worked with the Faculty for about 2 years. ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/advisors/johnDoe.html"
+      },{
+        "title": "Janedoe",
+        "excerpt":"Jane has worked with the Faculty for about 10 years. ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/council_members/janeDoe.html"
+      },{
+        "title": "Jimdoe",
+        "excerpt":"Jim is the best! ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/council_members/jimDoe.html"
+      },{
+        "title": "Johndoe",
+        "excerpt":"Jane has worked with the Faculty for about 2 years. ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/council_members/johnDoe.html"
+      },{
+        "title": "Professor",
+        "excerpt":"Here, some additional notes can be added for professors when needed! ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/events/editme.html"
+      },{
+        "title": "Welcome to Jekyll!",
+        "excerpt":"You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when...","categories": ["jekyll","update"],
+        "tags": [],
+        "url": "http://localhost:4000/jekyll/update/2019/02/03/welcome-to-jekyll.html"
+      },{
+        "title": "Professor",
+        "excerpt":"","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/profs_biology/janeDoe.html"
+      },{
+        "title": "Professor",
+        "excerpt":"Here, some additional notes can be added for professors when needed! ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/profs_biology/jimmyDawg.html"
+      },{
+        "title": "Professor",
+        "excerpt":"","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/profs_chemistry/janeDoe.html"
+      },{
+        "title": "Professor",
+        "excerpt":"Here, some additional notes can be added for professors when needed! ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/profs_chemistry/jimmyDawg.html"
+      },{
+        "title": "Professor",
+        "excerpt":"","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/profs_cs/janeDoe.html"
+      },{
+        "title": "Professor",
+        "excerpt":"Here, some additional notes can be added for professors when needed! ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/profs_cs/jimmyDawg.html"
+      },{
+        "title": "Professor",
+        "excerpt":"","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/profs_maths/janeDoe.html"
+      },{
+        "title": "Professor",
+        "excerpt":"Here, some additional notes can be added for professors when needed! ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/profs_maths/jimmyDawg.html"
+      },{
+        "title": "Professor",
+        "excerpt":"","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/profs_physics/janeDoe.html"
+      },{
+        "title": "Professor",
+        "excerpt":"Here, some additional notes can be added for professors when needed! ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/profs_physics/jimmyDawg.html"
+      }]

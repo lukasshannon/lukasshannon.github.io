@@ -1,0 +1,36 @@
+---
+layout: page
+---
+<div class="jumbotron">
+    <h2 class="lead">{{ page.content_title }}</h2>
+    <hr class="my-4">
+    <p>{{ page.content_description }}</p>
+    <table>
+        <thead>
+            <tr>
+                <th>RELATED FACULTY</th>
+                <th>RELATED DEGREES</th>
+                <th>GROUP</th>
+                <th>CAN BE TAKEN AS</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{ page.related_faculty }}</td>
+                <td>{{ page.related_degrees }}</td>
+                <td>{{ page.group }}</td>
+                <td>{{ page.taken_as }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Detailed Program Outline</h2>
+    <ul>
+        {%- for program in page.program_outlines -%}
+        <li>{{ program }}</li>
+        {%- endfor -%}
+    </ul>
+    <hr class="my-4">
+    <h2><a href="{{ page.link }}" target="_blank">Want to know more?</a></h2>
+</div>
+{{ content }}

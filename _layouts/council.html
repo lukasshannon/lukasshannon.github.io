@@ -1,0 +1,54 @@
+---
+layout: page
+---
+
+<div class="container">
+    <div class="row">
+        <div class="heading-title text-center">
+            <h3 class="text-uppercase">{{ page.caption }}</h3>
+            <p class="p-top-30 half-txt">{{ page.sub_caption }}</p>
+        </div>
+        {% for council_member in site.council_members %}
+        <div class="col-md-4 col-sm-4">
+            <div class="team-member">
+                <div class="team-img">
+                    <img src="{{ council_member.image }}" alt="" class="img-responsive">
+                </div>
+                <div class="team-hover">
+                    <div class="desk">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal-{{council_member.number}}">
+                                More
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="team-title">
+                <h5>{{council_member.name}}</h5>
+                <p>{{council_member.position}}</p>
+            </div>
+            
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal-{{council_member.number}}" tabindex="-1" role="dialog" aria-labelledby="exampleModal-{{council_member.number}}" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">{{council_member.name}}</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body">{{council_member.content | markdownify}}
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+
+    </div>
+</div>
+
+{{content}}

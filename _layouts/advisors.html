@@ -1,0 +1,27 @@
+---
+layout: post
+---
+<div class="jumbotron">
+    <p class="lead">{{content}}</p>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="heading-title text-center"><h3 class="text-uppercase">A list of our advisors</h3></div>
+    </div>
+    {% for advisor in site.advisors %}
+    <div class="col-md-8 col-sm-8">
+        {%- if advisor.image != '' -%}
+        <div class="team-member">
+            <div class="team-img">
+                <img src="{{ advisor.image }}" alt="" class="img-responsive">
+            </div>
+        </div>
+        {%- endif -%}
+        <div class="team-title">
+            {{advisor.name}}
+            <p class="lead">{{advisor.position}}. {{advisor.content}}</p>
+        </div>
+    </div>
+    {% endfor %}
+</div>

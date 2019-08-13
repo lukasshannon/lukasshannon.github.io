@@ -1,0 +1,96 @@
+---
+layout: post
+---
+<div class="jumbotron">
+    <p class="lead">{{content}}</p>
+    <hr class="my-8">
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="heading-title text-center">
+            <h3 class="text-uppercase">Biology Professors</h3>
+        </div>
+        {% for prof in site.profs_biology %}
+        <div class="col-md-4 col-sm-4">
+            <div class="team-member">
+            </div>
+            <div class="team-title">
+                <h5>{{prof.name}}</h5>
+                <p><strong>TITLE: </strong> {{ prof.title }}</p>
+                <p><strong>CLASSES: </strong> {{ prof.classes }}</p>
+                <p><strong>OFFICE: </strong> {{ prof.office }}</p>
+                <p class="lead">{{prof.content}}</p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    <div class="row">
+        <div class="heading-title text-center">
+            <h3 class="text-uppercase">Chemistry Professors</h3>
+        </div>
+        {% for member in site.profs_chemistry %}
+        <div class="col-md-4 col-sm-4">
+            <div class="team-member">
+            </div>
+            <div class="team-title">
+                <h5>{{member.name}}</h5>
+                <p><strong>TITLE: </strong> {{ member.title }}</p>
+                <p><strong>CLASSES: </strong> {{ member.classes }}</p>
+                <p><strong>OFFICE: </strong> {{ member.office }}</p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    <div class="row">
+        <div class="heading-title text-center">
+            <h3 class="text-uppercase">Computer Science Professors</h3>
+        </div>
+        {% for member in site.profs_cs %}
+        <div class="col-md-4 col-sm-4">
+            <div class="team-member">
+            </div>
+            <div class="team-title">
+                <h5>{{member.name}}</h5>
+                <p><strong>TITLE: </strong> {{ member.title }}</p>
+                <p><strong>CLASSES: </strong> {{ member.classes }}</p>
+                <p><strong>OFFICE: </strong> {{ member.office }}</p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    <div class="row">
+        <div class="heading-title text-center">
+            <h3 class="text-uppercase">Mathematics Professors</h3>
+        </div>
+        {% for member in site.profs_maths %}
+        <div class="col-md-4 col-sm-4">
+            <div class="team-member">
+            </div>
+            <div class="team-title">
+                <h5>{{member.name}}</h5>
+                <p><strong>TITLE: </strong> {{ member.title }}</p>
+                <p><strong>CLASSES: </strong> {{ member.classes }}</p>
+                <p><strong>OFFICE: </strong> {{ member.office }}</p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    <div class="row">
+        <div class="heading-title text-center">
+            <h3 class="text-uppercase">Physics Professors</h3>
+        </div>
+        {% for member in site.profs_physics %}
+        <div class="col-md-4 col-sm-4">
+            <div class="team-member">
+            </div>
+            <div class="team-title">
+                <h5>{{member.name}}</h5>
+                <p><strong>TITLE: </strong> {{ member.title }}</p>
+                <p><strong>CLASSES: </strong> {{ member.classes }}</p>
+                <p><strong>OFFICE: </strong> {{ member.office }}</p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
