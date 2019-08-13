@@ -4,10 +4,12 @@ Homepage of the McGill Integrative Bioscience Society
 
 ## Overview
 
-- A simple website built for MIBS from McGill University.
+- A simple website built for MIBS from McGill University
 - Built with Jekyll. Forked from 'so-simple-theme'.
 
 ## How to use
+
+### Editors
 
 - Install Jekyll (as described (here)[https://jekyllrb.com/docs/installation/])
 - Open your cmd/terminal and navigate to the directory folder (with the `cd <YourPath/>` command)
