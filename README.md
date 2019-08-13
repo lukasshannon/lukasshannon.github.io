@@ -9,7 +9,7 @@ Online homepage of the McGill Integrative Bioscience Society
 
 ### Editors
 
-- Install Jekyll [as described here](https://jekyllrb.com/docs/installation/)
+- Install Jekyll (as described [here](https://jekyllrb.com/docs/installation/))
 - Open your cmd/terminal and navigate to the directory folder (with the `cd <YourPath/>` command)
 - Install Gems and needed files with `gem install bundler jekyll` and `bundle install`
 
