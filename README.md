@@ -1,6 +1,6 @@
 # MIBS Website
 
-Homepage of the McGill Integrative Bioscience Society
+Online homepage of the McGill Integrative Bioscience Society
 
 ## Overview
 
