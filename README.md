@@ -1,8 +1,6 @@
-# MIBS GitHub Pages Site
+# McGill Integrative Bioscience Society
 
-### McGill Integrative Bioscience Society
-
-# MIBS project
+## MIBS Github Pages Site
 
 - A simple website built for MIBS from McGill University.
 - Built with Jekyll. Forked from 'so-simple-theme'.
