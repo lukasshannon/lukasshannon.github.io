@@ -37,17 +37,21 @@ The root folder contains:
 - `/_sass`: styling
 - `/assets`: css, html, and images
 
-⋅ As an editor:
-⋅⋅ Edit the corresponding `.md` file that matches the name of the path on the website.
--- Build the files after editing all needed content with `bundle exec jekyll build`
--- This should generate the `_site` folder.
--- View the website locally: run `bundle exec jekyll serve` on your terminal and then navigate to `localhost:4000` in your browser.
--- Amother simple way to run the project locally, would be by using the "Webserver plugin for Chrome"[https://chrome.google.com/webstore/detail/web-server-for-chrome/ofhbbkphhbklhfoeikjpcbhemlocgigb?hl=en]. Simply select the folder `_site` after running the app and navigate to the specified port with `localhost:<PortNumber>`.
+### Editing
 
-### How to correctly edit a markdown file
+- Edit the corresponding `.md` file that matches the path name of the page on the website
+- Build the files after editing all needed content with `bundle exec jekyll build`
+- This should generate the updated `_site` folder
 
-- Do not modify the first block of variables. Usually these contain sensitive and important data for the website to work, such as `permalink`, `layout`, etc. The only exception is the `title` variable.
-- For the Faculties' pages, you can edit the corresponding variables related to the each facultie's details. The variables' names are easy to understand, and even if you're having difficulty, simply see where the text goes on the website itself before editing.
+### Viewing locally
+
+- To view the website locally, run `bundle exec jekyll serve` in your terminal and then navigate to `localhost:4000` in your browser
+- Another simple way to run the project locally would be by using the "[Webserver plugin for Chrome](https://chrome.google.com/webstore/detail/web-server-for-chrome/ofhbbkphhbklhfoeikjpcbhemlocgigb?hl=en). Select the folder `_site` after running the app and navigate to the specified port with `localhost:<PortNumber>`.
+
+### How to edit a markdown file
+
+- Under normal circumstances, do not modify the first block of variables. These contain sensitive and important data for the website to work, such as `permalink`, `layout`, etc. One exception is the `title` variable.
+- The variables' names are meant to be easy to understand, and even if you're having difficulty, simply see where the text goes on the website itself before editing.
 - The same approach follows the Alumni, Council, Events, etc.
 - The Council Members and each Faculty staff members, are organized in folders and collections. You can notice each Faculty collection of members and edit the corresponding info by finding the corresponding file in that folder. For example, if you want to edit the professors list of Biology, you simply go to the `_profs_chemistry` folder, and add a new `.md` file, strictly following the structure of a staff member:
 
@@ -60,7 +64,7 @@ office: <Office>
 ---
 ```
 
-- Text formatting follows the same rules usual markdown files (you can consult this (page)[https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet])
+- Text formatting follows the same rules usual markdown files (you can consult this [page](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
 ### Images
 
