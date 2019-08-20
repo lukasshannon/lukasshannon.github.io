@@ -5,14 +5,14 @@ Homepage of the McGill Integrative Bioscience Society
 - A simple website built for MIBS from McGill University
 - Forked from 'so-simple-theme'.
 
-## Set Up
+## Installation
 
 ### Development Requirements
 
 - [Ruby](https://www.ruby-lang.org/en/documentation/installation/)
 - [Jekyll](https://jekyllrb.com/docs/installation/)
 
-### Installation
+### Setup
 
 - Once you have Ruby and Jekyll installed, clone this repository to your computer
 - Open a terminal (on Windows: cmd.exe) and navigate to the directory where you saved this repository (e.g. `cd ~/Downloads/mibs-site`)
@@ -37,12 +37,12 @@ The root folder contains:
 - `/_sass`: styling
 - `/assets`: css, html, and images
 
-- As an editor:
-  -- Edit the corresponding `.md` file that matches the name of the path on the website.
-  -- Build the files after editing all needed content with `bundle exec jekyll build`
-  -- This should generate the `_site` folder.
-  -- View the website locally: run `bundle exec jekyll serve` on your terminal and then navigate to `localhost:4000` in your browser.
-  -- Amother simple way to run the project locally, would be by using the "Webserver plugin for Chrome"[https://chrome.google.com/webstore/detail/web-server-for-chrome/ofhbbkphhbklhfoeikjpcbhemlocgigb?hl=en]. Simply select the folder `_site` after running the app and navigate to the specified port with `localhost:<PortNumber>`.
+⋅ As an editor:
+⋅⋅ Edit the corresponding `.md` file that matches the name of the path on the website.
+-- Build the files after editing all needed content with `bundle exec jekyll build`
+-- This should generate the `_site` folder.
+-- View the website locally: run `bundle exec jekyll serve` on your terminal and then navigate to `localhost:4000` in your browser.
+-- Amother simple way to run the project locally, would be by using the "Webserver plugin for Chrome"[https://chrome.google.com/webstore/detail/web-server-for-chrome/ofhbbkphhbklhfoeikjpcbhemlocgigb?hl=en]. Simply select the folder `_site` after running the app and navigate to the specified port with `localhost:<PortNumber>`.
 
 ### How to correctly edit a markdown file
 
