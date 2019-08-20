@@ -5,7 +5,7 @@ Homepage of the McGill Integrative Bioscience Society
 - A simple website built for MIBS from McGill University
 - Forked from 'so-simple-theme'.
 
-## Setup
+## Set Up
 
 ### Development Requirements
 
@@ -15,8 +15,25 @@ Homepage of the McGill Integrative Bioscience Society
 ### Installation
 
 - Once you have Ruby and Jekyll installed, clone this repository to your computer
-- Open a terminal (Windows: cmd.exe) and navigate to the directory where you saved this repository (e.g. `cd ~/Downloads/mibs-site`)
+- Open a terminal (on Windows: cmd.exe) and navigate to the directory where you saved this repository (e.g. `cd ~/Downloads/mibs-site`)
 - Install Gems and other dependencies by entering `gem install bundler jekyll` followed by `bundle install` in your terminal
+
+## Structure
+
+The root folder contains:
+
+- `README.md`: this file
+- `Gemfile` & `Gemfile.lock`: software dependencies
+- `LICENSE`: text explaining usage rights
+- `/_config.yml`: global variables
+- **.md files** corresponding to each page on the site including `index.md` for the homepage
+- **subdirectories** to hold each type of data (e.g. `/_profs_cs` holds a file for each of the CS professors)
+- `/_site` where the compiled version of the site is saved
+- `/_data`: sitemap
+- `/_includes`: theme assets
+- `/_layouts`: defines page structures
+- `/_sass`: styling
+- `/assets`: css, html, and images
 
 ## How to use
 
