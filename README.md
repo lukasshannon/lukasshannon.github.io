@@ -18,7 +18,9 @@ Homepage of the McGill Integrative Bioscience Society
 - Open a terminal (on Windows: cmd.exe) and navigate to the directory where you saved this repository (e.g. `cd ~/Downloads/mibs-site`)
 - Install Gems and other dependencies by entering `gem install bundler jekyll` followed by `bundle install` in your terminal
 
-## Structure
+## How to use
+
+### Structure
 
 The root folder contains:
 
@@ -26,16 +28,14 @@ The root folder contains:
 - `Gemfile` & `Gemfile.lock`: software dependencies
 - `LICENSE`: text explaining usage rights
 - `/_config.yml`: global variables
-- **.md files** corresponding to each page on the site including `index.md` for the homepage
-- **subdirectories** to hold each type of data (e.g. `/_profs_cs` holds a file for each of the CS professors)
+- _.md files_ corresponding to each page on the site including `index.md` for the homepage
+- _subdirectories_ to hold each type of data (e.g. `/_profs_cs` holds a file for each of the CS professors)
 - `/_site` where the compiled version of the site is saved
 - `/_data`: sitemap
 - `/_includes`: theme assets
 - `/_layouts`: defines page structures
 - `/_sass`: styling
 - `/assets`: css, html, and images
-
-## How to use
 
 - As an editor:
   -- Edit the corresponding `.md` file that matches the name of the path on the website.
