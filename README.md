@@ -1,11 +1,11 @@
 # MIBS Website
 
-Online homepage of the McGill Integrative Bioscience Society
+Homepage of the McGill Integrative Bioscience Society
 
 - A simple website built for MIBS from McGill University
-- Built with Jekyll. Forked from 'so-simple-theme'.
+- Forked from 'so-simple-theme'.
 
-## Development Requirements
+### Dev Requirements
 
 - [Ruby](https://www.ruby-lang.org/en/documentation/installation/)
 - [Jekyll](https://jekyllrb.com/docs/installation/)
