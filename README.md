@@ -15,7 +15,7 @@ Homepage of the McGill Integrative Bioscience Society
 ### Setup
 
 - Once you have Ruby and Jekyll installed, clone this repository to your computer
-- Open a terminal (on Windows: cmd.exe) and navigate to the directory where you saved this repository (e.g. `cd ~/Downloads/mibs-site`)
+- Open a terminal (_Windows:_ `cmd.exe`) and navigate to the directory where you saved this repository (e.g. `cd ~/Downloads/mibs-site`)
 - Install Gems and other dependencies by entering `gem install bundler jekyll` followed by `bundle install` in your terminal
 
 ## How to use
@@ -23,7 +23,7 @@ Homepage of the McGill Integrative Bioscience Society
 ### Viewing locally
 
 - To view the website locally, run `bundle exec jekyll serve` in your terminal and then navigate to `localhost:4000` in your browser
-- Another simple way to run the project locally would be by using the "[Webserver plugin for Chrome](https://chrome.google.com/webstore/detail/web-server-for-chrome/ofhbbkphhbklhfoeikjpcbhemlocgigb?hl=en). Select the folder `_site` after running the app and navigate to the specified port with `localhost:<PortNumber>`.
+- Another simple way to run the project locally would be by using the [Webserver plugin for Chrome](https://chrome.google.com/webstore/detail/web-server-for-chrome/ofhbbkphhbklhfoeikjpcbhemlocgigb?hl=en). Select the folder `_site` after running the app and navigate to the specified port with `localhost:<PortNumber>`.
 
 ### Directory structure
 
@@ -33,12 +33,12 @@ The root folder contains:
 - `Gemfile` & `Gemfile.lock`: software dependencies
 - `LICENSE`: text explaining usage rights
 - `/_config.yml`: global variables
-- _.md files_ corresponding to each page on the site including `index.md` for the homepage
-- _subdirectories_ to hold each type of data (e.g. `/_profs_cs` holds a file for each of the CS professors)
+- `.md files` corresponding to each page on the site including `index.md` for the homepage
+- `subdirectories` to hold each type of data (e.g. `/_profs_cs` holds a file for each of the CS professors)
 - `/_site` where the compiled version of the site is saved
 - `/_data`: sitemap
 - `/_includes`: theme assets
-- `/_layouts`: defines page structures
+- `/_layouts`: page structures
 - `/_sass`: styling
 - `/assets`: css, html, and images
 
@@ -87,5 +87,5 @@ image:
 
 ## Credits
 
-- [Lukas Shannon](https://lukasshannon.github.io)
-- [Eugen Yzeiri](https://geni94.github.io)
+- [LS](https://lukasshannon.github.io)
+- [EY](https://geni94.github.io)
