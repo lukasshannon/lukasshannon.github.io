@@ -48,7 +48,7 @@ The root folder contains:
 - Build the files after editing all needed content with `bundle exec jekyll build`
 - This should generate the updated `_site` folder
 
-### Warnings & tips
+### Editing markdown files
 
 - Under normal circumstances, do not modify the first block of variables. These contain sensitive and important data for the website to work, such as `permalink`, `layout`, etc.
 - Some exceptions are the `title` variable (which will be unique to each page) and the context-specific variables relating to the details of particular faculties, alumni, council members, etc.
@@ -65,9 +65,9 @@ image: <Image>
 <TextDescription>
 ```
 
-- Text formatting follows usual markdown `.md` rules (for help, consult this [page](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+- Text formatting follows usual markdown `.md` rules (for help, consult this [page](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet))
 
-### Images
+### Editing images
 
 - On pages with images, you will see a corresponding `image` variable at the head of the `.md` file.
 - You can specify the path of any image saved under `assets/images/<ImageName/>` . The recommended formats are .jpg and .png.
@@ -81,9 +81,9 @@ image:
 
 ## Deploying
 
-- Depending on the deployment environment, all you need to usually do is to simply drop the `_site` folder on the corresponding web server root directory.
+- Github Pages support is out-of-the-box. Simply create a repository named <username>.github.io and push the project folder. On the 'Settings' section of your repository, enable Github-Pages, and you're done. Github will automatically give you a subdomain, but in order to use another DNS, simply include the CNAME file in the repository root.
+- Otherwise, depending on the deployment environment, usually all you need to do is to drop the `_site` folder on your chosen web server's root directory.
 - [Check the Jekyll documentation for further details](https://jekyllrb.com/docs/github-pages/#deploying-jekyll-to-github-pages)
-- Note: Github Pages support is out-of-the-box. Simply create a repository named <username>.github.io and push the project folder; on the 'Settings' section of your repository, enable Github-Pages, and you're done. Github will automatically give you a subdomain, but in order to use another DNS, simply include the CNAME file in the repository root.
 
 ## Credits
 
