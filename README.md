@@ -20,7 +20,12 @@ Homepage of the McGill Integrative Bioscience Society
 
 ## How to use
 
-### Structure
+### Viewing locally
+
+- To view the website locally, run `bundle exec jekyll serve` in your terminal and then navigate to `localhost:4000` in your browser
+- Another simple way to run the project locally would be by using the "[Webserver plugin for Chrome](https://chrome.google.com/webstore/detail/web-server-for-chrome/ofhbbkphhbklhfoeikjpcbhemlocgigb?hl=en). Select the folder `_site` after running the app and navigate to the specified port with `localhost:<PortNumber>`.
+
+### Directory structure
 
 The root folder contains:
 
@@ -37,41 +42,36 @@ The root folder contains:
 - `/_sass`: styling
 - `/assets`: css, html, and images
 
-### Editing
+### How to edit
 
 - Edit the corresponding `.md` file that matches the path name of the page on the website
 - Build the files after editing all needed content with `bundle exec jekyll build`
 - This should generate the updated `_site` folder
 
-### Viewing locally
+### Warnings & tips
 
-- To view the website locally, run `bundle exec jekyll serve` in your terminal and then navigate to `localhost:4000` in your browser
-- Another simple way to run the project locally would be by using the "[Webserver plugin for Chrome](https://chrome.google.com/webstore/detail/web-server-for-chrome/ofhbbkphhbklhfoeikjpcbhemlocgigb?hl=en). Select the folder `_site` after running the app and navigate to the specified port with `localhost:<PortNumber>`.
-
-### How to edit a markdown file
-
-- Under normal circumstances, do not modify the first block of variables. These contain sensitive and important data for the website to work, such as `permalink`, `layout`, etc. One exception is the `title` variable.
-- The variables' names are meant to be easy to understand, and even if you're having difficulty, simply see where the text goes on the website itself before editing.
-- The same approach follows the Alumni, Council, Events, etc.
-- The Council Members and each Faculty staff members, are organized in folders and collections. You can notice each Faculty collection of members and edit the corresponding info by finding the corresponding file in that folder. For example, if you want to edit the professors list of Biology, you simply go to the `_profs_chemistry` folder, and add a new `.md` file, strictly following the structure of a staff member:
+- Under normal circumstances, do not modify the first block of variables. These contain sensitive and important data for the website to work, such as `permalink`, `layout`, etc.
+- Some exceptions are the `title` variable (which will be unique to each page) and the context-specific variables relating to the details of particular faculties, alumni, council members, etc.
+- The variables' names are meant to be easy to understand, and even if you're having difficulty, simply see where the associated text appears on the website itself before editing.
+- Each of the council members, staff members, events, etc. ("records") is an individual file which are all sorted into folders by type. You can edit the details of any record by looking in the collection it's part of and finding the corresponding file in that folder. For example, if you want to add a new council member, simply go to the `_council_members` folder and add a new `.md` file, strictly following the structure of a council member:
 
 ```
 ---
+number: <Number>
 name: <Name>
-title: <Title>
-classes: <Classes>
-office: <Office>
+position: <Position>
+image: <Image>
 ---
+<TextDescription>
 ```
 
-- Text formatting follows the same rules usual markdown files (you can consult this [page](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+- Text formatting follows usual markdown `.md` rules (for help, consult this [page](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
 ### Images
 
-- On pages where images are included, you will see the corresponding `image` variable at the head of the `.md` file.
-- You can edit this accordingly by specifying the path of your inserted image. You will need to always paste your new images at `assets/images/<ImageName/>` . The recommended formats are .jpg and .png.
-- Additional information can be inserted for images, as follows:
-  (example)
+- On pages with images, you will see a corresponding `image` variable at the head of the `.md` file.
+- You can specify the path of any image saved under `assets/images/<ImageName/>` . The recommended formats are .jpg and .png.
+- Additional information can be inserted for images as follows:
 
 ```
 image:
@@ -82,7 +82,10 @@ image:
 ## Deploying
 
 - Depending on the deployment environment, all you need to usually do is to simply drop the `_site` folder on the corresponding web server root directory.
-- (Check the Jekyll documentation for further details)[https://jekyllrb.com/docs/github-pages/#deploying-jekyll-to-github-pages]
-- Note: Github Pages support is out-of-the-box, i.e create a simple directory and push the project folder; on the 'Settings' section of your repository, enable GH-Pages, and you're done. Github will give you the generated subdomain. In order to use another DNS, simply include the CNAME file in the repository root.
+- [Check the Jekyll documentation for further details](https://jekyllrb.com/docs/github-pages/#deploying-jekyll-to-github-pages)
+- Note: Github Pages support is out-of-the-box. Simply create a repository named <username>.github.io and push the project folder; on the 'Settings' section of your repository, enable Github-Pages, and you're done. Github will automatically give you a subdomain, but in order to use another DNS, simply include the CNAME file in the repository root.
 
--- Crafted by (E.Y)[https://geni94.github.io]
+## Credits
+
+- [Lukas Shannon](https://lukasshannon.github.io)
+- [Eugen Yzeiri](https://geni94.github.io)
