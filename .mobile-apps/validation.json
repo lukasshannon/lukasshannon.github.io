@@ -35,5 +35,6 @@
     "voice-mode tool availability",
     "private preview deployment"
   ],
-  "gate_type": "agent-operated checks before updating the live branch; not a server-enforced policy"
+  "gate_type": "agent-operated checks before updating the live branch; not a server-enforced policy",
+  "validated_source_commit": "f8ee2dfad033439a34d03131f827f9132ee81a46"
 }
