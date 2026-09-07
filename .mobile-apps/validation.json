@@ -1,0 +1,39 @@
+{
+  "checked": "2026-09-07",
+  "automated_tests": {
+    "status": "passed",
+    "count": 5,
+    "coverage": [
+      "fatal JavaScript syntax rejected",
+      "deterministic releases and stale inventory detection",
+      "external assets and overwrite rejected",
+      "offline worker shell simulation",
+      "incomplete release rejected with previous cache retained",
+      "cache isolation, promotion and restored release"
+    ]
+  },
+  "browser": {
+    "status": "passed",
+    "viewport_width": 390,
+    "app_ready": true,
+    "horizontal_overflow": false,
+    "debug_hidden_initially": true,
+    "uncaught_error_visible": true,
+    "unhandled_rejection_visible": true,
+    "warn_captured": true,
+    "local_storage_survives_reload": true,
+    "catalog_loads": true
+  },
+  "independent_edit_trial": {
+    "status": "passed",
+    "change": "smaller action buttons, minimum 44px touch targets",
+    "only_app_and_release_files_changed": true
+  },
+  "unverified": [
+    "real Android installation",
+    "service worker in a real HTTPS browser (local preview is HTTP)",
+    "voice-mode tool availability",
+    "private preview deployment"
+  ],
+  "gate_type": "agent-operated checks before updating the live branch; not a server-enforced policy"
+}

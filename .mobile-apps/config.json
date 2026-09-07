@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "repository": "lukasshannon/lukasshannon.github.io",
+  "branch": "master",
+  "apps_directory": "apps",
+  "base_url": "https://lukasshannon.github.io/apps/",
+  "hosting": "github-pages-existing-branch",
+  "default_visibility": "public",
+  "quality_gate": {"static_check": true, "browser_smoke_check": true, "auto_fix_attempts": 1},
+  "publication": "atomic-fast-forward-commit-after-passing-checks",
+  "rollback": "restore-only-selected-app-in-new-commit",
+  "private_apps": "use-native-sites-with-separate-origin"
+}

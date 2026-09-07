@@ -1,0 +1,5 @@
+{
+  "name": "mobile-app-workflow",
+  "private": true,
+  "scripts": { "dev": "node .mobile-apps/scripts/serve.mjs" }
+}
