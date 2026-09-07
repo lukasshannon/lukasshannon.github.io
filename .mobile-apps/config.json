@@ -1,13 +1,35 @@
 {
   "schema": 1,
-  "repository": "lukasshannon/lukasshannon.github.io",
-  "branch": "master",
-  "apps_directory": "apps",
-  "base_url": "https://lukasshannon.github.io/apps/",
-  "hosting": "github-pages-existing-branch",
-  "default_visibility": "public",
-  "quality_gate": {"static_check": true, "browser_smoke_check": true, "auto_fix_attempts": 1},
-  "publication": "atomic-fast-forward-commit-after-passing-checks",
-  "rollback": "restore-only-selected-app-in-new-commit",
-  "private_apps": "use-native-sites-with-separate-origin"
+  "default_hosting": "native-sites",
+  "default_visibility": "owner-private",
+  "native_sites": {
+    "source_control": "one native Git repository per app",
+    "entrypoint": "dist/index.html",
+    "publish_after_checks": true,
+    "rollback": "restore prior working app source in a forward commit; republish same Site"
+  },
+  "starter_repository": {
+    "repository": "lukasshannon/lukasshannon.github.io",
+    "branch": "master",
+    "directory": ".mobile-apps"
+  },
+  "github_pages": {
+    "repository": "lukasshannon/lukasshannon.github.io",
+    "branch": "master",
+    "apps_directory": "apps",
+    "base_url": "https://lukasshannon.github.io/apps/",
+    "visibility": "public",
+    "status": "not active: direct commits accepted but automatic deployment did not trigger"
+  },
+  "quality_gate": {
+    "static_check": true,
+    "browser_smoke_check": true,
+    "auto_fix_attempts": 1,
+    "on_failure": "preserve previous live version"
+  },
+  "normal_edits": {
+    "create_pull_request": false,
+    "confirm_save": false,
+    "manual_download": false
+  }
 }

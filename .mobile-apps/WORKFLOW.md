@@ -1,6 +1,23 @@
 # Conversational mobile apps
 
-Use the existing GitHub connection and Pages site. The user works from a phone: normal requested changes include saving and publishing. Keep Git mechanics in the background. This is an agent-operated workflow, not a server or a new IDE.
+Use native Sites for new apps, with one private Site and its built-in Git history per app. Keep GitHub as the tested starter source and an optional hosting adapter. The current GitHub connection saved commits successfully but did not trigger Pages publishing; the app-directory URL still returned 404. Do not claim the GitHub adapter is live or silently require the user to manage PRs, tokens, or Pages settings.
+
+## Default: native Sites
+
+1. Resolve the requested app. Use a supplied name; otherwise propose and confirm one name once. For existing apps, resolve their Site by returned native identity or the user's URL and call get_site before editing. Never create a replacement Site for an existing app.
+2. Read the Sites building and hosting skills and follow their current environment/lifecycle instructions. They own registration, credentials, source saving, packaging, access, and deployment. Keep all app source in its native Site checkout; do not mirror private app code into this public GitHub repository.
+3. Start with a single authored `dist/index.html` plus local generated manifest, icons, `sw.js`, and `release.json`. Obtain this repository's small `.mobile-apps/scripts/prepare.py`, `check.py`, and templates when needed; cache them by source commit. Run `prepare.py new <site-checkout>/dist --name '<name>' --slug '<slug>'`, then implement the requested app in index.html. Scope all state/cache URLs relative to the app's origin.
+4. Use Mobile.store for small persistent local data or IndexedDB with the app namespace. Autosave, check save failures, call Mobile.ready only after real initialization, and track unsaved work. Preserve storage keys/schema and Site identity during edits and rollback. Do not add remote storage by default.
+5. Run `prepare.py release <site-checkout>/dist` after edits, then `check.py <site-checkout>/dist`. For browser QA, copy the tiny preview server into the Site checkout and set its dev script to `node .mobile-apps/scripts/serve.mjs --root dist`; it accepts the supervisor's forwarded flags and needs no npm dependencies. Use the supported Browser skill/preview supervisor to load the candidate and check startup plus the changed interaction. The original standalone Python server was not accessible to the cloud browser; use the supervisor.
+6. Perform one automatic repair pass for a code failure. If repair/checks still fail or the required browser check is unavailable, keep the current live version and report the blocker. Do not silently publish a failing candidate.
+7. Use the native source repository and Sites hosting flow to save/publish the tested source at the existing URL. Default new apps to owner-private access; make public only when requested. A normal requested edit is already authorized to save and publish, within actual tool permissions. Do not add pre-save summaries or routine confirmations. Verify terminal deployment success before returning the exact URL.
+8. For undo, identify the previous successfully published revision, restore its app source in a new forward commit, preserve hosting identity/user data, check, and republish to the same Site. Ensure subsequent edits read the restored source. Never force-push or roll back browser data.
+9. For an openable experimental preview, publish a separate private preview Site while production stays live. A saved undeployed version alone is not an openable preview. Keep preview identity distinct from production; no new custom service is needed.
+10. Keep the source/read footprint small: read the remote head, relevant app files, and manifest rather than every app. Use native Sites discovery to reopen apps; do not maintain a parallel Site identity catalog. Report when Android/voice lacks these tools; a skill cannot install tool capabilities into an unsupported mode.
+
+## Optional GitHub Pages adapter
+
+Use the following branch procedure only after automatic publishing is verified or the user explicitly chooses to configure GitHub Pages. It preserves one repository with one directory per app. Both direct Git object commits and a Contents API update were accepted in setup, but neither produced a new Pages run in this session. The connector exposes no Pages settings/build-request operation. Avoid more no-op commits or a custom CI pipeline merely to guess at that unknown configuration.
 
 ## Location and authority
 
@@ -9,7 +26,7 @@ Use the existing GitHub connection and Pages site. The user works from a phone: 
 - App source and permanent address: `apps/<slug>/index.html` and `https://lukasshannon.github.io/apps/<slug>/`.
 - Preserve the repository root homepage and unrelated apps.
 - This Pages location is public, including its source. Use native private Sites with a separate origin when an app must be private. Never silently publish a private app to Pages.
-- Existing Pages branch publishing is enabled. Do not add a Worker, custom backend, OAuth flow, PR, or custom CI pipeline for normal updates.
+- The repository has a Pages site and a past successful deployment, but current automatic branch publishing is unverified. Do not add a Worker, custom backend, OAuth flow, PR, or custom CI pipeline for normal updates.
 - Actual tool permissions and branch protections apply. These instructions do not disable platform-enforced confirmations.
 
 ## New app

@@ -36,5 +36,15 @@
     "private preview deployment"
   ],
   "gate_type": "agent-operated checks before updating the live branch; not a server-enforced policy",
-  "validated_source_commit": "f8ee2dfad033439a34d03131f827f9132ee81a46"
+  "validated_source_commit": "f8ee2dfad033439a34d03131f827f9132ee81a46",
+  "github_publication": {
+    "status": "not-triggered",
+    "git_object_commit": "f8ee2dfad033439a34d03131f827f9132ee81a46",
+    "contents_api_commit": "6ad6283aaff2822af8d88fab8bce82f1f1be41a7",
+    "app_directory_http_status": 404
+  },
+  "native_sites": {
+    "tools_available": true,
+    "first_app_deployment": "pending user app description and name"
+  }
 }

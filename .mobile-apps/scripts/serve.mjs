@@ -4,7 +4,7 @@ import { readFile, stat } from 'node:fs/promises';
 import path from 'node:path';
 const args = process.argv.slice(2);
 const option = (name, fallback) => args.includes(name) ? args[args.indexOf(name) + 1] : fallback;
-const root = process.cwd();
+const root = path.resolve(option('--root', '.'));
 const types = { '.html': 'text/html', '.js': 'text/javascript', '.mjs': 'text/javascript', '.css': 'text/css', '.json': 'application/json', '.webmanifest': 'application/manifest+json', '.png': 'image/png', '.svg': 'image/svg+xml', '.woff2': 'font/woff2' };
 http.createServer(async (req, res) => {
   try {
